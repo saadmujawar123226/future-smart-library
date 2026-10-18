@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Future Smart Library | Grade 8 Project</title>
+  <style>
+    :root {
+      --navy: #16365c;
+      --blue: #286b91;
+      --sky: #eaf3fa;
+      --ink: #1f2f40;
+      --muted: #5b6d7f;
+      --white: #ffffff;
+      --gold: #e7b65c;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f8fb;
+      color: var(--ink);
+      line-height: 1.6;
+    }
+    header {
+      color: var(--white);
+      background: linear-gradient(130deg, #102847, #245e83);
+      padding: 24px 7% 64px;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+      max-width: 1120px;
+      margin: 0 auto 54px;
+    }
+    .brand { font-weight: 800; letter-spacing: .4px; font-size: 1.05rem; }
+    nav a { color: #eaf3fa; text-decoration: none; margin-left: 18px; font-size: .92rem; }
+    nav a:hover { text-decoration: underline; }
+    .hero { max-width: 1120px; margin: auto; }
+    .eyebrow {
+      display: inline-block; border: 1px solid #7196b4; border-radius: 30px;
+      padding: 6px 12px; font-size: .8rem; color: #e8f4ff; letter-spacing: .6px;
+    }
+    h1 { font-size: clamp(2.3rem, 6vw, 4.5rem); line-height: 1.05; margin: 20px 0 16px; max-width: 800px; }
+    .hero p { max-width: 680px; color: #e1edf7; font-size: 1.1rem; }
+    .gold-line { width: 76px; height: 4px; background: var(--gold); border-radius: 4px; margin: 24px 0; }
+    .hero-note { font-size: .9rem !important; color: #c9dceb !important; }
+    main { max-width: 1120px; margin: auto; padding: 0 7% 64px; }
+    section { padding-top: 54px; }
+    .section-label { color: var(--blue); font-size: .78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; }
+    h2 { color: var(--navy); font-size: clamp(1.65rem, 4vw, 2.3rem); margin: 7px 0 12px; line-height: 1.2; }
+    .intro { max-width: 790px; color: var(--muted); }
+    .question {
+      background: var(--white); border-left: 5px solid var(--gold); padding: 22px 24px;
+      border-radius: 12px; box-shadow: 0 8px 24px #17365c0c; margin-top: 24px;
+    }
+    .question strong { display: block; color: var(--navy); margin-bottom: 8px; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 24px; }
+    .feature {
+      background: var(--white); border: 1px solid #e0e9f0; border-radius: 16px;
+      padding: 24px; box-shadow: 0 8px 24px #17365c0a;
+    }
+    .feature-icon { font-size: 1.8rem; }
+    .feature h3 { color: var(--navy); margin: 10px 0 8px; }
+    .feature p { color: var(--muted); margin: 0; }
+    .tag { display: inline-block; margin-top: 15px; background: var(--sky); color: var(--blue); padding: 5px 10px; border-radius: 30px; font-size: .78rem; font-weight: 700; }
+    .outcomes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 22px; }
+    .outcome { background: #eaf3fa; padding: 18px; border-radius: 12px; }
+    .outcome strong { color: var(--navy); display: block; margin-bottom: 4px; }
+    .outcome span { color: var(--muted); font-size: .9rem; }
+    .team-box { background: var(--navy); color: white; border-radius: 18px; padding: 28px; margin-top: 24px; }
+    .team-box h3 { margin: 0 0 8px; font-size: 1.35rem; }
+    .team-box p { color: #d7e6f3; margin-top: 0; }
+    .team-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; padding: 0; list-style: none; }
+    .team-list li { border: 1px solid #56728e; background: #ffffff0b; padding: 12px 14px; border-radius: 9px; }
+    footer { text-align: center; padding: 25px 7%; background: #e8eef4; color: #5b6d7f; font-size: .85rem; }
+    @media (max-width: 650px) {
+      header { padding-bottom: 46px; }
+      nav { margin-bottom: 38px; }
+      nav a { margin: 0 12px 0 0; }
+      .grid, .outcomes, .team-list { grid-template-columns: 1fr; }
+      main { padding-bottom: 44px; }
+    }
+  </style>
+</head>
+<body>
+  <header id="home">
+    <nav aria-label="Main navigation">
+      <div class="brand">📚 FUTURE SMART LIBRARY</div>
+      <div>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#team">Our Team</a>
+      </div>
+    </nav>
+    <div class="hero">
+      <span class="eyebrow">GRADE 8 • PBL 2026–2027</span>
+      <h1>The Library of<br>Tomorrow.</h1>
+      <div class="gold-line"></div>
+      <p>A smart, inclusive and interactive school library where technology helps every learner discover books, explore interests and enjoy reading.</p>
+      <p class="hero-note">A concept website presenting our ideas for the future of school libraries.</p>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <div class="section-label">Our idea</div>
+      <h2>About Our Project</h2>
+      <p class="intro">Our Future Smart Library redesigns the traditional school library using ideas such as AI book recommendations, voice search, digital borrowing and reading-data dashboards. The aim is to make finding books easier, more personal and more enjoyable for every student.</p>
+      <div class="question">
+        <strong>Our Big Question</strong>
+        How might we redesign a school library of the future so that it becomes a smart, inclusive, and interactive space that inspires every learner?
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="section-label">What makes it smart?</div>
+      <h2>Our Smart Features</h2>
+      <p class="intro">These are the four main ideas our team proposes for a future-ready school library.</p>
+      <div class="grid">
+        <article class="feature">
+          <div class="feature-icon" aria-hidden="true">🤖</div>
+          <h3>AI Librarian</h3>
+          <p>Suggests books based on a student's mood and interests, helping each learner discover a book they may enjoy.</p>
+          <span class="tag">Personalised reading</span>
+        </article>
+        <article class="feature">
+          <div class="feature-icon" aria-hidden="true">🎙️</div>
+          <h3>Voice Search &amp; “Ask the Library”</h3>
+          <p>Voice search helps students look for books by speaking. A chatbot concept answers common questions about books and library services.</p>
+          <span class="tag">Easy access to information</span>
+        </article>
+        <article class="feature">
+          <div class="feature-icon" aria-hidden="true">📱</div>
+          <h3>QR / RFID Borrow–Return</h3>
+          <p>A proposed simulation shows how scanning a QR code or using RFID could record when a book is borrowed or returned.</p>
+          <span class="tag">Faster book tracking</span>
+        </article>
+        <article class="feature">
+          <div class="feature-icon" aria-hidden="true">📊</div>
+          <h3>Digital Dashboard</h3>
+          <p>Displays the number of issued books and presents graphs for the most-read genres and most popular authors.</p>
+          <span class="tag">Useful reading insights</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="impact">
+      <div class="section-label">Our goal</div>
+      <h2>A Better Library for Everyone</h2>
+      <div class="outcomes">
+        <div class="outcome"><strong>Inclusive</strong><span>Different ways to search and explore books.</span></div>
+        <div class="outcome"><strong>Interactive</strong><span>Helpful digital tools for students.</span></div>
+        <div class="outcome"><strong>Inspiring</strong><span>More ways to discover the joy of reading.</span></div>
+      </div>
+    </section>
+
+    <section id="team">
+      <div class="section-label">The people behind the idea</div>
+      <h2>Meet Our Team</h2>
+      <p class="intro">This project was created through teamwork, creativity and a shared interest in improving the school library.</p>
+      <div class="team-box">
+        <h3>Our Project Team</h3>
+        <p>Replace the placeholders below with your team members' names.</p>
+        <ul class="team-list">
+          <li>Team Member 1</li>
+          <li>Team Member 2</li>
+          <li>Team Member 3</li>
+          <li>Team Member 4</li>
+        </ul>
+        <p style="margin:18px 0 0;font-size:.88rem;">The Indian International School, DSO · Grade 8 · 2026–2027</p>
+      </div>
+    </section>
+  </main>
+  <footer>Future Smart Library · A Grade 8 PBL concept project</footer>
+</body>
+</html>
